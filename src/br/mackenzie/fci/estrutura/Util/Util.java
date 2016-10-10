@@ -24,7 +24,6 @@ import java.util.logging.Logger;
 public class Util {
     
     public static String[] saveCompaniesCodeToArray(File file) {
-
         String[] allCodes = new String[quantidadeLinhas(file)];
         String[] arraySplit;
         int l = 0;
@@ -40,7 +39,6 @@ public class Util {
                     l++;
                 }
             } while (line != null);
-
         } catch (FileNotFoundException ex) {
             Logger.getLogger(Atividade04.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
@@ -71,7 +69,7 @@ public class Util {
             }
         }
 
-        return linhaLeitura.getLineNumber() + 1;
+        return linhaLeitura.getLineNumber() ;
     }
     
     
