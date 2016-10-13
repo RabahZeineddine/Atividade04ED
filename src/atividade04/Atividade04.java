@@ -34,24 +34,7 @@ public class Atividade04 {
         System.out.println("Tempo de execição para a FORMA2: " + ChronoUnit.MILLIS.between(startTime, finishTime) + " ms");
     }
     
-//    public static int first(String arr[], int low, int high, String x) {
-//        if (low <= high) {
-//            int mid = (low + high) / 2;
-//            if (mid + 1 < arr.length) {
-//                if (x.equals(arr[mid]) && !x.equals(arr[mid + 1])) {
-//                    return mid;
-//                } else if (x.equals(arr[mid])) {
-//                    return first(arr, mid + 1, high, x);
-//                } else {
-//                    return first(arr, low, mid - 1, x) + first(arr, mid + 1, high, x);
-//                }
-//            } else if (x.equals(arr[mid])) {
-//                return mid;
-//            }
-//        }
-//        return 0;
-//    }
-
+    
     public static int buscaBinaria(String[] arr, int low, int high) {
             int mid = (low + high) / 2;
             if (!arr[low].equals(arr[high])) {
